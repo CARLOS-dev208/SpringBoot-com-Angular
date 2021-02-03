@@ -61,12 +61,13 @@ export class ClientesFormComponent implements OnInit {
         this.seccess= false;
         this.erros = errorResponse.error.campos;
         this.validacaoCpf = errorResponse.error.mensagem
+        console.log(errorResponse)
       } );
       setTimeout(()=>{
         this.seccess=false;
         this.validacaoCpf = null;
         this.erros= [];
-        // this.router.navigate(['/clientes-lista']);
+        this.router.navigate(['/clientes-lista']);
       },4000);
     }
   }

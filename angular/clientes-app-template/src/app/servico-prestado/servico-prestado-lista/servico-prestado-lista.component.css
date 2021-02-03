@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+button {
+    background: linear-gradient(to right, #b433ff, #284aff);
+    width: 50%;
+    height: 35px;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "Poppins";
+    color: white;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: linear-gradient(to left, #b433ff, #284aff);
+}
+
+button i {
+    margin-right: 10px;
+}
+
+.alert-menssagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: red;
+    width: 30%;
+    height: 8%;
+    top: 2px;
+    right: 0;
+    margin-right: 10px;
+}

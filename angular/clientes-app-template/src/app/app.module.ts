@@ -9,6 +9,9 @@ import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component';
 import { ClientesService } from './clientes.service';
 import { ClientesModule } from './clientes/clientes.module';
+import {ServicoPrestadoModule} from './servico-prestado/servico-prestado.module';
+import {ServicoPrestadoService } from './servico-prestado.service';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +23,12 @@ import { ClientesModule } from './clientes/clientes.module';
     HttpClientModule,
     AppRoutingModule,
     TemplateModule,
-    ClientesModule
+    ClientesModule,
+    ServicoPrestadoModule
   ],
   providers: [
-    ClientesService
+    ClientesService,
+    ServicoPrestadoService
   ],
   bootstrap: [AppComponent]
 })

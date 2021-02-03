@@ -1,0 +1,7 @@
+.sb-sidenav-dark {
+    background: linear-gradient(100deg, rgb(117, 9, 9), black);
+}
+
+.sb-sidenav-dark .sb-sidenav-footer {
+    background-color: #040303;
+}

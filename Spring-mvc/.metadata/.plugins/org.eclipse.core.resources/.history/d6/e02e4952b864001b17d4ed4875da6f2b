@@ -1,0 +1,19 @@
+package io.github.carlos.rest.dto;
+
+import javax.validation.constraints.NotBlank;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ServicoPrestadoDTO {
+
+	@NotBlank(message = "Valor não pode ser vazio")
+	private String descricao;
+	private String valor;
+	private String data;
+	private Integer idCliente;
+}

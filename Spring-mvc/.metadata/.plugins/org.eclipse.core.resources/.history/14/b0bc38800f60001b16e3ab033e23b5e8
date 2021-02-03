@@ -1,0 +1,13 @@
+package io.github.carlos.model.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import io.github.carlos.model.entity.Servico;
+
+public interface ServicoRepository extends JpaRepository<Servico, Integer>{
+
+	List<Servico> findByNomeClienteAndMes(String nome, String mes);
+
+}

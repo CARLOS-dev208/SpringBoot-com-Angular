@@ -8,6 +8,10 @@ import org.springframework.stereotype.Component;
 public class ConverterParaBigDecimal {
 
 	public BigDecimal converter(String value) {
-		return null;
+		if(value ==null) {
+				return null;
+		}
+		value = value.replace(".", "").replace(",",".");			
+		return new BigDecimal(value);
 	}
 }
