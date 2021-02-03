@@ -26,9 +26,7 @@ export class ServicoPrestadoListaComponent implements OnInit {
       this.lista = res
       this.lista.length <=0 ? this.menssagem = "Nem um serviço cadastrado!" : this.menssagem = null
     },erro=>{
-      this.menssagem= "Campos vazio!"
-
-      console.log(erro)
+      this.menssagem= "Campo vazio!"
     });
   }
 

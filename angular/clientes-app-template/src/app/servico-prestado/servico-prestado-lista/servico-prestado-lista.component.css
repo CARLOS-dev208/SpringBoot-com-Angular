@@ -3,9 +3,6 @@ button {
     background: linear-gradient(to right, #b433ff, #284aff);
     width: 50%;
     height: 35px;
-    font-weight: 300;
-    font-size: 1rem;
-    font-family: "Poppins";
     color: white;
     border-radius: 6px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
@@ -15,10 +12,14 @@ button {
 
 button:hover {
     background: linear-gradient(to left, #b433ff, #284aff);
+    letter-spacing: 2px;
 }
 
-button i {
-    margin-right: 10px;
+.spacy {
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    font-family: "Poppins";
 }
 
 .alert-menssagem {
@@ -26,10 +27,29 @@ button i {
     justify-content: center;
     align-items: center;
     position: absolute;
-    background: red;
+    background: linear-gradient(to left, #284aff, #b433ff) no-repeat;
     width: 30%;
     height: 8%;
     top: 2px;
     right: 0;
     margin-right: 10px;
+    animation: menssagem 1.5s ease-in-out alternate;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+@keyframes menssagem {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }

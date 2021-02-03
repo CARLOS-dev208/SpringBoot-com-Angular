@@ -1,0 +1,94 @@
+section {
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)no-repeat;
+    background-size: 300% 300%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 10px;
+}
+
+.novoUsuario {
+    margin-top: 5px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: rgb(247, 243, 243);
+}
+
+form {
+    margin: 20px 0;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 1);
+    overflow: hidden;
+    height: 95%;
+}
+
+form .input-block label {
+    font-size: 14px;
+    color: darkslateblue;
+}
+
+form .input-block input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 7px;
+    font-size: 16px;
+    color: #7159c1;
+    border-radius: 2px;
+    border: 1px solid #ccddef;
+    outline-color: #7159c1;
+}
+
+form .btn-login {
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #7159c1;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+}
+
+form .input-block:nth-child(1) {
+    margin-bottom: 20px;
+    animation: fade 1.5s;
+}
+
+form .input-block:nth-child(2) {
+    margin-bottom: 20px;
+    animation: fade 1.5s 150ms backwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0, 50%;
+    }
+    50% {
+        background-position: 100%, 50%;
+    }
+    100% {
+        background-position: 0, 50%;
+    }
+}

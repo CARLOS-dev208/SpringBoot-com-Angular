@@ -1,0 +1,20 @@
+<section class="form-section">
+    <h1>{{isCadastrando ? "Cadastra Novo Usuário": "FAZER LOGIN"}}</h1>
+
+    <div class="form-wrapper">
+        <form (submit)="onSubmit()">
+            <div class="input-block">
+                <label for="login-email">Login</label>
+                <input placeholder="Digite seu login..." autofocus type="text" id="login-email" name="username" [(ngModel)]="username" />
+            </div>
+            <div class="input-block">
+                <label for="login-password">Password</label>
+                <input placeholder="Digite sua senha..." name="password" [(ngModel)]="password" type="password" id="login-password" />
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+            <div class="novoUsuario">
+                <button (click)="preparaCadastrando()" type="button" class="btn-login">Cadastre-se!</button>
+            </div>
+        </form>
+    </div>
+</section>
