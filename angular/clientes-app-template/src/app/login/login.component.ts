@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -12,14 +13,19 @@ export class LoginComponent {
   isLoginErro:boolean
   isCadastrando:boolean
 
-  constructor() {  }
+  constructor(private router: Router) {}
 
   onSubmit(){
+    this.router.navigate([''])
     console.log(`User: ${this.username}, Pass: ${this.password}`)
   }
 
   preparaCadastrando(){
     this.isCadastrando = true
+  }
+
+  cancelaCadastrando(){
+    this.isCadastrando = false
   }
 
 

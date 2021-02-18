@@ -17,6 +17,11 @@ an add global styles to this file, and also import other style files */
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+html {
+    margin: -10px;
+    overflow: hidden;
+}
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -75,7 +80,6 @@ section {
 }
 
 body {
-    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
@@ -83,6 +87,7 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+    height: 100%;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

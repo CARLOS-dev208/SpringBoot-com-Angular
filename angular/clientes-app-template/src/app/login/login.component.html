@@ -11,9 +11,10 @@
                 <label for="login-password">Password</label>
                 <input placeholder="Digite sua senha..." name="password" [(ngModel)]="password" type="password" id="login-password" />
             </div>
-            <button type="submit" class="btn-login">Login</button>
+            <button *ngIf="!isCadastrando" type="submit" class="btn-login">Login</button>
             <div class="novoUsuario">
-                <button (click)="preparaCadastrando()" type="button" class="btn-login">Cadastre-se!</button>
+                <button (click)="preparaCadastrando()" type="button" class="btn-login">{{isCadastrando ? "Cadastra": "Cadastre-se!"}}</button>
+                <button *ngIf="isCadastrando" (click)="cancelaCadastrando()" type="button" class="btn-cancela">Cancela</button>
             </div>
         </form>
     </div>
