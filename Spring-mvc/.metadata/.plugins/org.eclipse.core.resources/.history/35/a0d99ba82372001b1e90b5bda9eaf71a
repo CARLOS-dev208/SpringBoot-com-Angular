@@ -1,0 +1,19 @@
+package io.github.carlos.model.entity;
+
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Usuario {
+	
+	private Integer id;
+	private String username;
+	private String password;
+
+}

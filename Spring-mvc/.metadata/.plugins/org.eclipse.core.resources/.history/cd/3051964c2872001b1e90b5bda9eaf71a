@@ -1,0 +1,5 @@
+package io.github.carlos.rest.controller;
+
+public class UsuarioController {
+
+}
